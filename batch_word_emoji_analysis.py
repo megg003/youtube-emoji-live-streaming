@@ -12,7 +12,7 @@ spark.sparkContext.setLogLevel("ERROR")
 
 # MySQL connection options
 mysql_options = {
-    "url": "jdbc:mysql://localhost:3306/youtube_chat_db",
+    "url": "",
     "driver": "com.mysql.cj.jdbc.Driver",
     "user": "root",
     "password": "root"
