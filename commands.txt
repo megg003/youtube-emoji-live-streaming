@@ -1,0 +1,31 @@
+# Navigate to your kafka path 
+
+# Start Zookeeper 
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+
+#Open another terminal - start kafka broker 
+bin/kafka-server-start.sh config/server.properties
+
+#Open new terminal 
+bin/kafka-topics.sh --create --topic youtube-chat --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+
+#Open another terminal and navigate to your project directory 
+python3 youtube_chat_producer.py
+
+
+#The sample output 
+Sent: {'user': 'Alice', 'message': 'Loved it!', ...}
+
+
+#Run spark 
+spark-submit spark_streaming.py
+
+
+#Output for spark 
++------------------------------------------+-----+-----+
+|window                                    |user |count|
++------------------------------------------+-----+-----+
+|{2025-04-13 10:00:00, 2025-04-13 10:30:00}|Alice|3    |
+...
