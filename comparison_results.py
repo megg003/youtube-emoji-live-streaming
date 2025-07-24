@@ -6,8 +6,8 @@ import pandas as pd
 # Connect to MySQL
 conn = mysql.connector.connect(
     host="localhost",
-    user="root",
-    password="root",  # change if needed
+    user="",
+    password="",  # change if needed
     database="youtube_chat_db"
 )
 
