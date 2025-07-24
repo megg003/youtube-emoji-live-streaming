@@ -3,9 +3,9 @@ import pandas as pd
 
 # Setup MySQL connection
 conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="root",  # Change this if your password differs
+    host="",
+    user="",
+    password="",  # Change this if your password differs
     database="youtube_chat_db"
 )
 
