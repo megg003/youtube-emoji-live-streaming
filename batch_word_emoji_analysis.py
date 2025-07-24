@@ -14,8 +14,8 @@ spark.sparkContext.setLogLevel("ERROR")
 mysql_options = {
     "url": "",
     "driver": "com.mysql.cj.jdbc.Driver",
-    "user": "root",
-    "password": "root"
+    "user": "",
+    "password": ""
 }
 
 # === Load Word Counts Table ===
