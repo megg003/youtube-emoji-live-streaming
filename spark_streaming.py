@@ -52,9 +52,9 @@ emoji_counts_with_time = emoji_counts.withColumn("timestamp", current_timestamp(
 # MySQL connection
 mysql_properties = {
     "driver": "com.mysql.cj.jdbc.Driver",
-    "url": "jdbc:mysql://localhost:3306/youtube_chat_db",
-    "user": "root",
-    "password": "root",
+    "url": "",
+    "user": "",
+    "password": "",
     "dbtable": "word_counts"
 }
 
