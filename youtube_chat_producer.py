@@ -3,8 +3,8 @@ from googleapiclient.discovery import build
 import json
 import time
 
-API_KEY = "AIzaSyAZum1wNM0puH6tDx3NCk4bF9lV6sPP-fQ"
-VIDEO_ID = "0nvb-AcyJyI"
+API_KEY = ""
+VIDEO_ID = ""
 
 producer = KafkaProducer(
     bootstrap_servers='localhost:9092',
